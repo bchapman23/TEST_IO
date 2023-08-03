@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Aug  3 17:06:51 2023
+# Process ID: 900
+# Current directory: C:/Users/benlu/Desktop/ISML/T3.2_TESTIO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2280 C:\Users\benlu\Desktop\ISML\T3.2_TESTIO\T3.2_TESTIO.xpr
+# Log file: C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/vivado.log
+# Journal file: C:/Users/benlu/Desktop/ISML/T3.2_TESTIO\vivado.jou
+# Running On: DESKTOP-JN6611I, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 4, Host memory: 8376 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3.2_TESTIO.xpr
+add_files -fileset constrs_1 -norecurse C:/Users/benlu/Desktop/ISML/LaserControl_T3.2/T3_2_constraint_current.xdc

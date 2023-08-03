@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Aug  1 13:34:33 2023
+# Process ID: 10136
+# Current directory: C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3.2_TESTIO.runs/synth_1
+# Command line: vivado.exe -log Reveal_Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Reveal_Top.tcl
+# Log file: C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3.2_TESTIO.runs/synth_1/Reveal_Top.vds
+# Journal file: C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3.2_TESTIO.runs/synth_1\vivado.jou
+# Running On: DESKTOP-JN6611I, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 4, Host memory: 8376 MB
+#-----------------------------------------------------------
+source Reveal_Top.tcl -notrace

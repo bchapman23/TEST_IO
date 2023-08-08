@@ -1,13 +1,13 @@
 #-----------------------------------------------------------
 # Vivado v2022.1 (64-bit)
-# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Tue Aug  1 13:35:55 2023
-# Process ID: 19924
-# Current directory: C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3.2_TESTIO.runs/impl_1
-# Command line: vivado.exe -log Reveal_Top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Reveal_Top.tcl -notrace
-# Log file: C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3.2_TESTIO.runs/impl_1/Reveal_Top.vdi
-# Journal file: C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3.2_TESTIO.runs/impl_1\vivado.jou
-# Running On: DESKTOP-JN6611I, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 4, Host memory: 8376 MB
+# Start of session at: Mon Aug  7 23:46:21 2023
+# Process ID: 402357
+# Current directory: /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.runs/impl_1
+# Command line: vivado -log Reveal_Top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Reveal_Top.tcl -notrace
+# Log file: /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.runs/impl_1/Reveal_Top.vdi
+# Journal file: /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.runs/impl_1/vivado.jou
+# Running On: zen-sav, OS: Linux, CPU Frequency: 1847.136 MHz, CPU Physical cores: 8, Host memory: 16146 MB
 #-----------------------------------------------------------
 source Reveal_Top.tcl -notrace

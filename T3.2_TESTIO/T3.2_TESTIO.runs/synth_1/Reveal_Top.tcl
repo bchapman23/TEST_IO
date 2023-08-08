@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3.2_TESTIO.runs/synth_1/Reveal_Top.tcl"
+  variable script "/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.runs/synth_1/Reveal_Top.tcl"
   variable category "vivado_synth"
 }
 
@@ -77,31 +77,47 @@ create_project -in_memory -part xc7a75tfgg484-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3.2_TESTIO.cache/wt [current_project]
-set_property parent.project_path C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3.2_TESTIO.xpr [current_project]
+set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
+set_property webtalk.parent_dir /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.cache/wt [current_project]
+set_property parent.project_path /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.xpr [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property board_part_repo_paths {C:/Users/benlu/AppData/Roaming/Xilinx/Vivado/2022.1/xhub/board_store/xilinx_board_store} [current_project]
+set_property board_part_repo_paths {/home/savo/.Xilinx/Vivado/2022.1/xhub/board_store/xilinx_board_store} [current_project]
 set_property board_part opalkelly.com:xem7310-a75:part0:1.0 [current_project]
-set_property ip_output_repo c:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3.2_TESTIO.cache/ip [current_project]
+set_property ip_output_repo /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/XEM7310-A75/okBTPipeIn.v
-  C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/XEM7310-A75/okBTPipeOut.v
-  C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/XEM7310-A75/okCoreHarness.v
-  C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/XEM7310-A75/okLibrary.v
-  C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/XEM7310-A75/okPipeIn.v
-  C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/XEM7310-A75/okPipeOut.v
-  C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/XEM7310-A75/okRegisterBridge.v
-  C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/XEM7310-A75/okTriggerIn.v
-  C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/XEM7310-A75/okTriggerOut.v
-  C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/XEM7310-A75/okWireIn.v
-  C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/XEM7310-A75/okWireOut.v
-  C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v
+  /home/savo/Documents/TEST_IO/T3.2_TESTIO/XEM7310-A75/okBTPipeIn.v
+  /home/savo/Documents/TEST_IO/T3.2_TESTIO/XEM7310-A75/okBTPipeOut.v
+  /home/savo/Documents/TEST_IO/T3.2_TESTIO/XEM7310-A75/okCoreHarness.v
+  /home/savo/Documents/TEST_IO/T3.2_TESTIO/XEM7310-A75/okLibrary.v
+  /home/savo/Documents/TEST_IO/T3.2_TESTIO/XEM7310-A75/okPipeIn.v
+  /home/savo/Documents/TEST_IO/T3.2_TESTIO/XEM7310-A75/okPipeOut.v
+  /home/savo/Documents/TEST_IO/T3.2_TESTIO/XEM7310-A75/okRegisterBridge.v
+  /home/savo/Documents/TEST_IO/T3.2_TESTIO/XEM7310-A75/okTriggerIn.v
+  /home/savo/Documents/TEST_IO/T3.2_TESTIO/XEM7310-A75/okTriggerOut.v
+  /home/savo/Documents/TEST_IO/T3.2_TESTIO/XEM7310-A75/okWireIn.v
+  /home/savo/Documents/TEST_IO/T3.2_TESTIO/XEM7310-A75/okWireOut.v
+  /home/savo/Documents/TEST_IO/T3.2_TESTIO/Reveal_Top.v
+  /home/savo/Documents/TEST_IO/T3.2_TESTIO/i2c_master.v
+  /home/savo/Documents/TEST_IO/T3.2_TESTIO/i2c_operator.v
+  /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.srcs/sources_1/new/i2c_tb.v
+  /home/savo/Documents/TEST_IO/T3.2_TESTIO/spi_master_adc.v
 }
-read_vhdl -library xil_defaultlib C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/XEM7310-A75/okLibrary.vhd
+read_vhdl -library xil_defaultlib /home/savo/Documents/TEST_IO/T3.2_TESTIO/XEM7310-A75/okLibrary.vhd
+read_ip -quiet /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+set_property used_in_implementation false [get_files -all /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
+
+read_ip -quiet /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.srcs/sources_1/ip/fifo_w32_16_r16_32_ib/fifo_w32_16_r16_32_ib.xci
+set_property used_in_implementation false [get_files -all /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.gen/sources_1/ip/fifo_w32_16_r16_32_ib/fifo_w32_16_r16_32_ib.xdc]
+set_property used_in_implementation false [get_files -all /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.gen/sources_1/ip/fifo_w32_16_r16_32_ib/fifo_w32_16_r16_32_ib_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.gen/sources_1/ip/fifo_w32_16_r16_32_ib/fifo_w32_16_r16_32_ib_ooc.xdc]
+
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -111,12 +127,15 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc
-set_property used_in_implementation false [get_files C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc]
+read_xdc /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc
+set_property used_in_implementation false [get_files /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc]
+
+read_xdc /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint_current.xdc
+set_property used_in_implementation false [get_files /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint_current.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3.2_TESTIO.srcs/utils_1/imports/synth_1/Reveal_Top.dcp
+read_checkpoint -auto_incremental -incremental /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.srcs/utils_1/imports/synth_1/Reveal_Top.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

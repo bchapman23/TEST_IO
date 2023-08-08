@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3.2_TESTIO.runs/impl_1/Reveal_Top.tcl"
+  variable script "/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.runs/impl_1/Reveal_Top.tcl"
   variable category "vivado_impl"
 }
 
@@ -125,21 +125,25 @@ set rc [catch {
   set_param chipscope.maxJobs 2
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a75tfgg484-1
-  set_property board_part_repo_paths {C:/Users/benlu/AppData/Roaming/Xilinx/Vivado/2022.1/xhub/board_store/xilinx_board_store} [current_project]
+  set_property board_part_repo_paths {/home/savo/.Xilinx/Vivado/2022.1/xhub/board_store/xilinx_board_store} [current_project]
   set_property board_part opalkelly.com:xem7310-a75:part0:1.0 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3.2_TESTIO.cache/wt [current_project]
-  set_property parent.project_path C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3.2_TESTIO.xpr [current_project]
-  set_property ip_output_repo C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3.2_TESTIO.cache/ip [current_project]
+  set_property webtalk.parent_dir /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.cache/wt [current_project]
+  set_property parent.project_path /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.xpr [current_project]
+  set_property ip_output_repo /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3.2_TESTIO.runs/synth_1/Reveal_Top.dcp
+  add_files -quiet /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.runs/synth_1/Reveal_Top.dcp
+  read_ip -quiet /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+  read_ip -quiet /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.srcs/sources_1/ip/fifo_w32_16_r16_32_ib/fifo_w32_16_r16_32_ib.xci
 OPTRACE "read constraints: implementation" START { }
-  read_xdc C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc
+  read_xdc /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc
+  read_xdc /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint_current.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }
@@ -304,6 +308,7 @@ set rc [catch {
   create_msg_db write_bitstream.pb
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   catch { write_mem_info -force -no_partial_mmi Reveal_Top.mmi }
 OPTRACE "write_bitstream setup" END { }
 OPTRACE "write_bitstream" START { }

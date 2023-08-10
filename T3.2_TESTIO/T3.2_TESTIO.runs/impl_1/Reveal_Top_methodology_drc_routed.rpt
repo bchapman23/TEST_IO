@@ -1,7 +1,11 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
+<<<<<<< HEAD
 | Date         : Tue Aug  8 18:03:25 2023
+=======
+| Date         : Mon Aug  7 23:47:43 2023
+>>>>>>> refs/remotes/origin/main
 | Host         : zen-sav running 64-bit Ubuntu 22.04.3 LTS
 | Command      : report_methodology -file Reveal_Top_methodology_drc_routed.rpt -pb Reveal_Top_methodology_drc_routed.pb -rpx Reveal_Top_methodology_drc_routed.rpx
 | Design       : Reveal_Top
@@ -373,162 +377,290 @@ Related violations: <none>
 
 TIMING-16#1 Warning
 Large setup violation  
+<<<<<<< HEAD
 There is a large setup violation of -2.435 ns between wi00/ep_dataout_reg[24]/C (clocked by mmcm0_clk0) and prevData_reg[24]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+=======
+There is a large setup violation of -2.525 ns between wi00/ep_dataout_reg[18]_replica/C (clocked by mmcm0_clk0) and prevData_reg[18]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+>>>>>>> refs/remotes/origin/main
 Related violations: <none>
 
 TIMING-16#2 Warning
 Large setup violation  
+<<<<<<< HEAD
 There is a large setup violation of -2.519 ns between wi00/ep_dataout_reg[8]/C (clocked by mmcm0_clk0) and prevData_reg[8]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+=======
+There is a large setup violation of -2.526 ns between wi00/ep_dataout_reg[25]/C (clocked by mmcm0_clk0) and prevData_reg[25]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+>>>>>>> refs/remotes/origin/main
 Related violations: <none>
 
 TIMING-16#3 Warning
 Large setup violation  
+<<<<<<< HEAD
 There is a large setup violation of -2.524 ns between wi00/ep_dataout_reg[23]_replica/C (clocked by mmcm0_clk0) and prevData_reg[23]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+=======
+There is a large setup violation of -2.530 ns between wi00/ep_dataout_reg[12]/C (clocked by mmcm0_clk0) and prevData_reg[12]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+>>>>>>> refs/remotes/origin/main
 Related violations: <none>
 
 TIMING-16#4 Warning
 Large setup violation  
+<<<<<<< HEAD
 There is a large setup violation of -2.536 ns between wi00/ep_dataout_reg[29]/C (clocked by mmcm0_clk0) and prevData_reg[29]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+=======
+There is a large setup violation of -2.547 ns between wi00/ep_dataout_reg[0]/C (clocked by mmcm0_clk0) and prevData_reg[0]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+>>>>>>> refs/remotes/origin/main
 Related violations: <none>
 
 TIMING-16#5 Warning
 Large setup violation  
+<<<<<<< HEAD
 There is a large setup violation of -2.537 ns between wi00/ep_dataout_reg[7]/C (clocked by mmcm0_clk0) and prevData_reg[7]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+=======
+There is a large setup violation of -2.559 ns between wi00/ep_dataout_reg[9]/C (clocked by mmcm0_clk0) and prevData_reg[9]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+>>>>>>> refs/remotes/origin/main
 Related violations: <none>
 
 TIMING-16#6 Warning
 Large setup violation  
+<<<<<<< HEAD
 There is a large setup violation of -2.557 ns between wi00/ep_dataout_reg[6]/C (clocked by mmcm0_clk0) and prevData_reg[6]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+=======
+There is a large setup violation of -2.578 ns between wi00/ep_dataout_reg[10]/C (clocked by mmcm0_clk0) and prevData_reg[10]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+>>>>>>> refs/remotes/origin/main
 Related violations: <none>
 
 TIMING-16#7 Warning
 Large setup violation  
+<<<<<<< HEAD
 There is a large setup violation of -2.565 ns between wi00/ep_dataout_reg[25]/C (clocked by mmcm0_clk0) and prevData_reg[25]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+=======
+There is a large setup violation of -2.578 ns between wi00/ep_dataout_reg[16]_replica/C (clocked by mmcm0_clk0) and prevData_reg[16]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+>>>>>>> refs/remotes/origin/main
 Related violations: <none>
 
 TIMING-16#8 Warning
 Large setup violation  
+<<<<<<< HEAD
 There is a large setup violation of -2.572 ns between wi00/ep_dataout_reg[4]/C (clocked by mmcm0_clk0) and prevData_reg[4]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+=======
+There is a large setup violation of -2.583 ns between wi00/ep_dataout_reg[27]/C (clocked by mmcm0_clk0) and prevData_reg[27]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+>>>>>>> refs/remotes/origin/main
 Related violations: <none>
 
 TIMING-16#9 Warning
 Large setup violation  
+<<<<<<< HEAD
 There is a large setup violation of -2.578 ns between wi00/ep_dataout_reg[11]/C (clocked by mmcm0_clk0) and prevData_reg[11]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+=======
+There is a large setup violation of -2.585 ns between wi00/ep_dataout_reg[6]/C (clocked by mmcm0_clk0) and prevData_reg[6]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+>>>>>>> refs/remotes/origin/main
 Related violations: <none>
 
 TIMING-16#10 Warning
 Large setup violation  
+<<<<<<< HEAD
 There is a large setup violation of -2.588 ns between wi00/ep_dataout_reg[19]/C (clocked by mmcm0_clk0) and prevData_reg[19]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+=======
+There is a large setup violation of -2.586 ns between wi00/ep_dataout_reg[1]/C (clocked by mmcm0_clk0) and prevData_reg[1]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+>>>>>>> refs/remotes/origin/main
 Related violations: <none>
 
 TIMING-16#11 Warning
 Large setup violation  
+<<<<<<< HEAD
 There is a large setup violation of -2.600 ns between wi00/ep_dataout_reg[31]/C (clocked by mmcm0_clk0) and prevData_reg[31]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+=======
+There is a large setup violation of -2.595 ns between wi00/ep_dataout_reg[30]/C (clocked by mmcm0_clk0) and prevData_reg[30]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+>>>>>>> refs/remotes/origin/main
 Related violations: <none>
 
 TIMING-16#12 Warning
 Large setup violation  
+<<<<<<< HEAD
 There is a large setup violation of -2.604 ns between wi00/ep_dataout_reg[28]/C (clocked by mmcm0_clk0) and prevData_reg[28]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+=======
+There is a large setup violation of -2.602 ns between wi00/ep_dataout_reg[7]/C (clocked by mmcm0_clk0) and prevData_reg[7]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+>>>>>>> refs/remotes/origin/main
 Related violations: <none>
 
 TIMING-16#13 Warning
 Large setup violation  
+<<<<<<< HEAD
 There is a large setup violation of -2.608 ns between wi00/ep_dataout_reg[9]/C (clocked by mmcm0_clk0) and prevData_reg[9]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+=======
+There is a large setup violation of -2.603 ns between wi00/ep_dataout_reg[20]/C (clocked by mmcm0_clk0) and prevData_reg[20]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+>>>>>>> refs/remotes/origin/main
 Related violations: <none>
 
 TIMING-16#14 Warning
 Large setup violation  
+<<<<<<< HEAD
 There is a large setup violation of -2.609 ns between wi00/ep_dataout_reg[12]/C (clocked by mmcm0_clk0) and prevData_reg[12]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+=======
+There is a large setup violation of -2.606 ns between wi00/ep_dataout_reg[8]/C (clocked by mmcm0_clk0) and prevData_reg[8]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+>>>>>>> refs/remotes/origin/main
 Related violations: <none>
 
 TIMING-16#15 Warning
 Large setup violation  
+<<<<<<< HEAD
 There is a large setup violation of -2.612 ns between wi00/ep_dataout_reg[16]/C (clocked by mmcm0_clk0) and prevData_reg[16]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+=======
+There is a large setup violation of -2.613 ns between wi00/ep_dataout_reg[17]/C (clocked by mmcm0_clk0) and prevData_reg[17]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+>>>>>>> refs/remotes/origin/main
 Related violations: <none>
 
 TIMING-16#16 Warning
 Large setup violation  
+<<<<<<< HEAD
 There is a large setup violation of -2.615 ns between wi00/ep_dataout_reg[22]/C (clocked by mmcm0_clk0) and prevData_reg[22]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+=======
+There is a large setup violation of -2.617 ns between wi00/ep_dataout_reg[28]/C (clocked by mmcm0_clk0) and prevData_reg[28]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+>>>>>>> refs/remotes/origin/main
 Related violations: <none>
 
 TIMING-16#17 Warning
 Large setup violation  
+<<<<<<< HEAD
 There is a large setup violation of -2.619 ns between wi00/ep_dataout_reg[13]/C (clocked by mmcm0_clk0) and prevData_reg[13]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+=======
+There is a large setup violation of -2.617 ns between wi00/ep_dataout_reg[31]/C (clocked by mmcm0_clk0) and prevData_reg[31]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+>>>>>>> refs/remotes/origin/main
 Related violations: <none>
 
 TIMING-16#18 Warning
 Large setup violation  
+<<<<<<< HEAD
 There is a large setup violation of -2.621 ns between wi00/ep_dataout_reg[27]/C (clocked by mmcm0_clk0) and prevData_reg[27]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+=======
+There is a large setup violation of -2.618 ns between wi00/ep_dataout_reg[23]/C (clocked by mmcm0_clk0) and prevData_reg[23]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+>>>>>>> refs/remotes/origin/main
 Related violations: <none>
 
 TIMING-16#19 Warning
 Large setup violation  
+<<<<<<< HEAD
 There is a large setup violation of -2.623 ns between wi00/ep_dataout_reg[14]/C (clocked by mmcm0_clk0) and prevData_reg[14]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+=======
+There is a large setup violation of -2.627 ns between wi00/ep_dataout_reg[29]/C (clocked by mmcm0_clk0) and prevData_reg[29]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+>>>>>>> refs/remotes/origin/main
 Related violations: <none>
 
 TIMING-16#20 Warning
 Large setup violation  
+<<<<<<< HEAD
 There is a large setup violation of -2.623 ns between wi00/ep_dataout_reg[15]/C (clocked by mmcm0_clk0) and prevData_reg[15]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+=======
+There is a large setup violation of -2.628 ns between wi00/ep_dataout_reg[19]/C (clocked by mmcm0_clk0) and prevData_reg[19]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+>>>>>>> refs/remotes/origin/main
 Related violations: <none>
 
 TIMING-16#21 Warning
 Large setup violation  
+<<<<<<< HEAD
 There is a large setup violation of -2.627 ns between wi00/ep_dataout_reg[1]/C (clocked by mmcm0_clk0) and prevData_reg[1]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+=======
+There is a large setup violation of -2.635 ns between wi00/ep_dataout_reg[2]/C (clocked by mmcm0_clk0) and prevData_reg[2]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+>>>>>>> refs/remotes/origin/main
 Related violations: <none>
 
 TIMING-16#22 Warning
 Large setup violation  
+<<<<<<< HEAD
 There is a large setup violation of -2.627 ns between wi00/ep_dataout_reg[3]/C (clocked by mmcm0_clk0) and prevData_reg[3]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+=======
+There is a large setup violation of -2.636 ns between wi00/ep_dataout_reg[22]/C (clocked by mmcm0_clk0) and prevData_reg[22]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+>>>>>>> refs/remotes/origin/main
 Related violations: <none>
 
 TIMING-16#23 Warning
 Large setup violation  
+<<<<<<< HEAD
 There is a large setup violation of -2.628 ns between wi00/ep_dataout_reg[10]/C (clocked by mmcm0_clk0) and prevData_reg[10]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+=======
+There is a large setup violation of -2.643 ns between wi00/ep_dataout_reg[15]/C (clocked by mmcm0_clk0) and prevData_reg[15]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+>>>>>>> refs/remotes/origin/main
 Related violations: <none>
 
 TIMING-16#24 Warning
 Large setup violation  
+<<<<<<< HEAD
 There is a large setup violation of -2.629 ns between wi00/ep_dataout_reg[20]/C (clocked by mmcm0_clk0) and prevData_reg[20]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+=======
+There is a large setup violation of -2.649 ns between wi00/ep_dataout_reg[11]/C (clocked by mmcm0_clk0) and prevData_reg[11]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+>>>>>>> refs/remotes/origin/main
 Related violations: <none>
 
 TIMING-16#25 Warning
 Large setup violation  
+<<<<<<< HEAD
 There is a large setup violation of -2.641 ns between wi00/ep_dataout_reg[5]/C (clocked by mmcm0_clk0) and prevData_reg[5]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+=======
+There is a large setup violation of -2.659 ns between wi00/ep_dataout_reg[21]/C (clocked by mmcm0_clk0) and prevData_reg[21]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+>>>>>>> refs/remotes/origin/main
 Related violations: <none>
 
 TIMING-16#26 Warning
 Large setup violation  
+<<<<<<< HEAD
 There is a large setup violation of -2.660 ns between wi00/ep_dataout_reg[0]/C (clocked by mmcm0_clk0) and prevData_reg[0]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+=======
+There is a large setup violation of -2.678 ns between wi00/ep_dataout_reg[14]/C (clocked by mmcm0_clk0) and prevData_reg[14]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+>>>>>>> refs/remotes/origin/main
 Related violations: <none>
 
 TIMING-16#27 Warning
 Large setup violation  
+<<<<<<< HEAD
 There is a large setup violation of -2.664 ns between wi00/ep_dataout_reg[30]/C (clocked by mmcm0_clk0) and prevData_reg[30]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+=======
+There is a large setup violation of -2.684 ns between wi00/ep_dataout_reg[4]/C (clocked by mmcm0_clk0) and prevData_reg[4]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+>>>>>>> refs/remotes/origin/main
 Related violations: <none>
 
 TIMING-16#28 Warning
 Large setup violation  
+<<<<<<< HEAD
 There is a large setup violation of -2.668 ns between wi00/ep_dataout_reg[17]/C (clocked by mmcm0_clk0) and prevData_reg[17]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+=======
+There is a large setup violation of -2.695 ns between wi00/ep_dataout_reg[3]/C (clocked by mmcm0_clk0) and prevData_reg[3]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+>>>>>>> refs/remotes/origin/main
 Related violations: <none>
 
 TIMING-16#29 Warning
 Large setup violation  
+<<<<<<< HEAD
 There is a large setup violation of -2.676 ns between wi00/ep_dataout_reg[21]/C (clocked by mmcm0_clk0) and prevData_reg[21]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+=======
+There is a large setup violation of -2.696 ns between wi00/ep_dataout_reg[5]/C (clocked by mmcm0_clk0) and prevData_reg[5]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+>>>>>>> refs/remotes/origin/main
 Related violations: <none>
 
 TIMING-16#30 Warning
 Large setup violation  
+<<<<<<< HEAD
 There is a large setup violation of -2.682 ns between wi00/ep_dataout_reg[2]/C (clocked by mmcm0_clk0) and prevData_reg[2]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+=======
+There is a large setup violation of -2.698 ns between wi00/ep_dataout_reg[24]/C (clocked by mmcm0_clk0) and prevData_reg[24]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+>>>>>>> refs/remotes/origin/main
 Related violations: <none>
 
 TIMING-16#31 Warning
 Large setup violation  
+<<<<<<< HEAD
 There is a large setup violation of -2.698 ns between wi00/ep_dataout_reg[26]/C (clocked by mmcm0_clk0) and prevData_reg[26]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+=======
+There is a large setup violation of -2.712 ns between wi00/ep_dataout_reg[13]/C (clocked by mmcm0_clk0) and prevData_reg[13]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+>>>>>>> refs/remotes/origin/main
 Related violations: <none>
 
 TIMING-16#32 Warning
 Large setup violation  
+<<<<<<< HEAD
 There is a large setup violation of -2.753 ns between wi00/ep_dataout_reg[18]/C (clocked by mmcm0_clk0) and prevData_reg[18]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+=======
+There is a large setup violation of -2.756 ns between wi00/ep_dataout_reg[26]/C (clocked by mmcm0_clk0) and prevData_reg[26]/D (clocked by clk_100_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+>>>>>>> refs/remotes/origin/main
 Related violations: <none>
 
 TIMING-18#1 Warning

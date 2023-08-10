@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a75tfgg484-1" LaunchTime="1690911270" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/Reveal_Top.dcp">
-  <File Type="PA-TCL" Name="Reveal_Top.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="Reveal_Top_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="Reveal_Top_reports.tcl"/>
-  <File Type="RDS-RDS" Name="Reveal_Top.vds"/>
-  <File Type="RDS-UTIL" Name="Reveal_Top_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="Reveal_Top_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="Reveal_Top.dcp"/>
+<GenRun Id="synth_1" LaunchPart="xc7a75tfgg484-1" LaunchTime="1691532059" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/Reveal_Top.dcp">
   <File Type="VDS-TIMINGSUMMARY" Name="Reveal_Top_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="Reveal_Top.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="Reveal_Top_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="Reveal_Top_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="Reveal_Top_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="Reveal_Top.vds"/>
+  <File Type="REPORTS-TCL" Name="Reveal_Top_reports.tcl"/>
   <File Type="VDS-TIMING-PB" Name="Reveal_Top_timing_summary_synth.pb"/>
+  <File Type="PA-TCL" Name="Reveal_Top.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/XEM7310-A75/okBTPipeIn.v">
@@ -101,6 +101,41 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PPRDIR/i2c_master.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/i2c_operator.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/i2c_tb.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/spi_master_adc.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/fifo_w32_16_r32_16_ib/fifo_w32_16_r32_16_ib.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="Reveal_Top"/>
@@ -114,7 +149,14 @@
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
+    <File Path="$PPRDIR/T3_2_constraint_current.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <Config>
+      <Option Name="TargetConstrsFile" Val="$PPRDIR/T3_2_constraint_current.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
@@ -133,9 +175,8 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
     <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
 </GenRun>

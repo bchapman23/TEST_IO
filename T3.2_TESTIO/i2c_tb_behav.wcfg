@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="i2c_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="i2c_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="1,000.000001 us"></ZoomEndTime>
+      <Cursor1Time time="1,000.000000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="201"></NameColumnWidth>
+      <ValueColumnWidth column_width="78"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wvobject type="logic" fp_name="/i2c_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/i2c_tb/TESTIO">
+      <obj_property name="ElementShortName">TESTIO[2:0]</obj_property>
+      <obj_property name="ObjectShortName">TESTIO[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/i2c_tb/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/i2c_tb/IO_SDA">
+      <obj_property name="ElementShortName">IO_SDA</obj_property>
+      <obj_property name="ObjectShortName">IO_SDA</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/i2c_tb/IO_SCL">
+      <obj_property name="ElementShortName">IO_SCL</obj_property>
+      <obj_property name="ObjectShortName">IO_SCL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/i2c_tb/busyI2C">
+      <obj_property name="ElementShortName">busyI2C</obj_property>
+      <obj_property name="ObjectShortName">busyI2C</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/i2c_tb/test_inst/state">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group14">
+      <obj_property name="label">I2C Data</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/i2c_tb/test_inst/addrI2C">
+         <obj_property name="ElementShortName">addrI2C[6:0]</obj_property>
+         <obj_property name="ObjectShortName">addrI2C[6:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/i2c_tb/test_inst/regI2C">
+         <obj_property name="ElementShortName">regI2C[7:0]</obj_property>
+         <obj_property name="ObjectShortName">regI2C[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/i2c_tb/test_inst/dataI2C">
+         <obj_property name="ElementShortName">dataI2C[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dataI2C[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="logic" fp_name="/i2c_tb/test_inst/startI2C">
+      <obj_property name="ElementShortName">startI2C</obj_property>
+      <obj_property name="ObjectShortName">startI2C</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group32">
+      <obj_property name="label">Interface State</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/i2c_tb/test_inst/i2c_master_inst/state">
+         <obj_property name="ElementShortName">state[7:0]</obj_property>
+         <obj_property name="ObjectShortName">state[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/i2c_tb/test_inst/i2c_master_inst/proc_counter">
+         <obj_property name="ElementShortName">proc_counter[1:0]</obj_property>
+         <obj_property name="ObjectShortName">proc_counter[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/i2c_tb/test_inst/i2c_master_inst/o_busy">
+         <obj_property name="ElementShortName">o_busy</obj_property>
+         <obj_property name="ObjectShortName">o_busy</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

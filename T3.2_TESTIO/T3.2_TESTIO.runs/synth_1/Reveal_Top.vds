@@ -1,18 +1,18 @@
 #-----------------------------------------------------------
 # Vivado v2022.1 (64-bit)
-# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Tue Aug  1 13:34:33 2023
-# Process ID: 10136
-# Current directory: C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3.2_TESTIO.runs/synth_1
-# Command line: vivado.exe -log Reveal_Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Reveal_Top.tcl
-# Log file: C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3.2_TESTIO.runs/synth_1/Reveal_Top.vds
-# Journal file: C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3.2_TESTIO.runs/synth_1\vivado.jou
-# Running On: DESKTOP-JN6611I, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 4, Host memory: 8376 MB
+# Start of session at: Tue Aug  8 18:01:01 2023
+# Process ID: 192316
+# Current directory: /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.runs/synth_1
+# Command line: vivado -log Reveal_Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Reveal_Top.tcl
+# Log file: /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.runs/synth_1/Reveal_Top.vds
+# Journal file: /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.runs/synth_1/vivado.jou
+# Running On: zen-sav, OS: Linux, CPU Frequency: 1397.472 MHz, CPU Physical cores: 8, Host memory: 16146 MB
 #-----------------------------------------------------------
 source Reveal_Top.tcl -notrace
-Command: read_checkpoint -auto_incremental -incremental C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3.2_TESTIO.srcs/utils_1/imports/synth_1/Reveal_Top.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3.2_TESTIO.srcs/utils_1/imports/synth_1/Reveal_Top.dcp for incremental synthesis
+Command: read_checkpoint -auto_incremental -incremental /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.srcs/utils_1/imports/synth_1/Reveal_Top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.srcs/utils_1/imports/synth_1/Reveal_Top.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top Reveal_Top -part xc7a75tfgg484-1
 Starting synth_design
@@ -21,21 +21,26 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a75t
 INFO: [Device 21-403] Loading part xc7a75tfgg484-1
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
-INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 23180
+INFO: [Synth 8-7075] Helper process launched with PID 192363
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'xpm_cdc_async_rst' [/home/savo/Documents/TEST_IO/T3.2_TESTIO/XEM7310-A75/okCoreHarness.v:15399]
+INFO: [Synth 8-9937] previous definition of design element 'xpm_cdc_async_rst' is here [/etc/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1258]
+WARNING: [Synth 8-8895] 'i2cBusy' is already implicitly declared on line 316 [/home/savo/Documents/TEST_IO/T3.2_TESTIO/Reveal_Top.v:329]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1287.324 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2707.434 ; gain = 96.656 ; free physical = 1149 ; free virtual = 29885
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'Reveal_Top' [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:23]
-INFO: [Synth 8-6157] synthesizing module 'xil_internal_svlib_okHost' [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/XEM7310-A75/okLibrary.v:10]
-INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734]
-INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734]
-INFO: [Synth 8-6157] synthesizing module 'FDRE' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:27836]
-INFO: [Synth 8-6155] done synthesizing module 'FDRE' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:27836]
-INFO: [Synth 8-6157] synthesizing module 'IBUFG' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:55687]
-INFO: [Synth 8-6155] done synthesizing module 'IBUFG' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:55687]
-INFO: [Synth 8-6157] synthesizing module 'MMCME2_BASE' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:63629]
+INFO: [Synth 8-6157] synthesizing module 'Reveal_Top' [/home/savo/Documents/TEST_IO/T3.2_TESTIO/Reveal_Top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.runs/synth_1/.Xil/Vivado-192316-zen-sav/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.runs/synth_1/.Xil/Vivado-192316-zen-sav/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'xil_internal_svlib_okHost' [/home/savo/Documents/TEST_IO/T3.2_TESTIO/XEM7310-A75/okLibrary.v:10]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:27836]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:27836]
+INFO: [Synth 8-6157] synthesizing module 'IBUFG' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:55687]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFG' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:55687]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_BASE' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:63629]
 	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
 	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: double 
 	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
@@ -45,272 +50,228 @@ INFO: [Synth 8-6157] synthesizing module 'MMCME2_BASE' [C:/Xilinx/Vivado/2022.1/
 	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
 	Parameter REF_JITTER1 bound to: 0.000000 - type: double 
 	Parameter STARTUP_WAIT bound to: FALSE - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'MMCME2_BASE' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:63629]
-WARNING: [Synth 8-7071] port 'CLKFBOUTB' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/XEM7310-A75/okLibrary.v:53]
-WARNING: [Synth 8-7071] port 'CLKOUT0B' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/XEM7310-A75/okLibrary.v:53]
-WARNING: [Synth 8-7071] port 'CLKOUT1' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/XEM7310-A75/okLibrary.v:53]
-WARNING: [Synth 8-7071] port 'CLKOUT1B' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/XEM7310-A75/okLibrary.v:53]
-WARNING: [Synth 8-7071] port 'CLKOUT2' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/XEM7310-A75/okLibrary.v:53]
-WARNING: [Synth 8-7071] port 'CLKOUT2B' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/XEM7310-A75/okLibrary.v:53]
-WARNING: [Synth 8-7071] port 'CLKOUT3' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/XEM7310-A75/okLibrary.v:53]
-WARNING: [Synth 8-7071] port 'CLKOUT3B' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/XEM7310-A75/okLibrary.v:53]
-WARNING: [Synth 8-7071] port 'CLKOUT4' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/XEM7310-A75/okLibrary.v:53]
-WARNING: [Synth 8-7071] port 'CLKOUT5' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/XEM7310-A75/okLibrary.v:53]
-WARNING: [Synth 8-7071] port 'CLKOUT6' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/XEM7310-A75/okLibrary.v:53]
-WARNING: [Synth 8-7071] port 'PWRDWN' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/XEM7310-A75/okLibrary.v:53]
-WARNING: [Synth 8-7023] instance 'mmcm0' of module 'MMCME2_BASE' has 18 connections declared, but only 6 given [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/XEM7310-A75/okLibrary.v:53]
-INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1082]
-INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1082]
-INFO: [Synth 8-6157] synthesizing module 'GND' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:28815]
-INFO: [Synth 8-6155] done synthesizing module 'GND' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:28815]
-INFO: [Synth 8-6157] synthesizing module 'VCC' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:109689]
-INFO: [Synth 8-6155] done synthesizing module 'VCC' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:109689]
-INFO: [Synth 8-6157] synthesizing module 'LUT5' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62808]
-INFO: [Synth 8-6155] done synthesizing module 'LUT5' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62808]
-INFO: [Synth 8-6157] synthesizing module 'LUT6' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized0' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized0' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6157] synthesizing module 'LUT3' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62720]
-INFO: [Synth 8-6155] done synthesizing module 'LUT3' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62720]
-INFO: [Synth 8-6157] synthesizing module 'LUT2' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62682]
-INFO: [Synth 8-6155] done synthesizing module 'LUT2' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62682]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized1' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized1' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized0' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62808]
-INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized0' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62808]
-INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized1' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62808]
-INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized1' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62808]
-INFO: [Synth 8-6157] synthesizing module 'LUT4' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62762]
-INFO: [Synth 8-6155] done synthesizing module 'LUT4' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62762]
-INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized0' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62720]
-INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized0' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62720]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized2' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized2' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized3' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized3' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6157] synthesizing module 'LUT1' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62648]
-INFO: [Synth 8-6155] done synthesizing module 'LUT1' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62648]
-INFO: [Synth 8-6157] synthesizing module 'FDSE' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:27972]
-INFO: [Synth 8-6155] done synthesizing module 'FDSE' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:27972]
-INFO: [Synth 8-6157] synthesizing module 'CARRY4' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1486]
-INFO: [Synth 8-6155] done synthesizing module 'CARRY4' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1486]
-INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized2' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62808]
-INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized2' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62808]
-INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized0' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62682]
-INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized0' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62682]
-INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized1' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62682]
-INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized1' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62682]
-INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized1' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62720]
-INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized1' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62720]
-INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized0' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62762]
-INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized0' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62762]
-INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized3' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62808]
-INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized3' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62808]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized4' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized4' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6157] synthesizing module 'LUT1__parameterized0' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62648]
-INFO: [Synth 8-6155] done synthesizing module 'LUT1__parameterized0' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62648]
-INFO: [Synth 8-6157] synthesizing module 'FDPE' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:27776]
-INFO: [Synth 8-6155] done synthesizing module 'FDPE' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:27776]
-INFO: [Synth 8-6157] synthesizing module 'FDCE' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:27620]
-INFO: [Synth 8-6155] done synthesizing module 'FDCE' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:27620]
-INFO: [Synth 8-6157] synthesizing module 'RAMB18E1' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:102852]
-INFO: [Synth 8-6155] done synthesizing module 'RAMB18E1' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:102852]
-INFO: [Synth 8-6157] synthesizing module 'FDRE__parameterized0' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:27836]
-INFO: [Synth 8-6155] done synthesizing module 'FDRE__parameterized0' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:27836]
-INFO: [Synth 8-6157] synthesizing module 'FDPE__parameterized0' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:27776]
-INFO: [Synth 8-6155] done synthesizing module 'FDPE__parameterized0' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:27776]
-INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized4' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62808]
-INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized4' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62808]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized5' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized5' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized6' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized6' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized1' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62762]
-INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized1' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62762]
-INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized2' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62762]
-INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized2' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62762]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized7' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized7' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized8' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized8' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized9' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized9' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized10' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized10' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized11' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized11' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized5' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62808]
-INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized5' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62808]
-INFO: [Synth 8-6157] synthesizing module 'DNA_PORT' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:26095]
-INFO: [Synth 8-6155] done synthesizing module 'DNA_PORT' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:26095]
-INFO: [Synth 8-6157] synthesizing module 'FDCE__parameterized0' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:27620]
-INFO: [Synth 8-6155] done synthesizing module 'FDCE__parameterized0' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:27620]
-INFO: [Synth 8-6157] synthesizing module 'FDPE__parameterized1' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:27776]
-INFO: [Synth 8-6155] done synthesizing module 'FDPE__parameterized1' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:27776]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized12' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized12' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized0' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized0' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized13' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized13' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized14' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized14' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized1' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized1' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized2' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized2' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized3' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized3' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized15' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized15' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized4' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized4' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized16' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized16' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized5' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized5' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized17' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized17' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6157] synthesizing module 'RAM128X1S' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:97818]
-INFO: [Synth 8-6155] done synthesizing module 'RAM128X1S' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:97818]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized6' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized6' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized18' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized18' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized7' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized7' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6157] synthesizing module 'RAM32M' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:98065]
-INFO: [Synth 8-6155] done synthesizing module 'RAM32M' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:98065]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized8' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized8' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized9' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized9' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized10' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized10' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized11' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized11' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized19' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized19' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized20' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized20' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized12' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized12' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized13' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized13' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized21' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized21' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized14' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized14' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized15' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized15' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized16' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized16' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized22' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized22' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized17' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized17' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized18' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized18' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized19' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized19' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized20' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized20' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized23' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized23' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized24' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized24' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized21' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized21' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
-INFO: [Synth 8-6157] synthesizing module 'RAMB18E1__parameterized0' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:102852]
-INFO: [Synth 8-6155] done synthesizing module 'RAMB18E1__parameterized0' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:102852]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized25' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized25' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized26' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized26' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized27' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized27' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized28' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized28' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized29' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized29' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized30' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized30' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized31' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized31' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized32' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized32' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized33' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized33' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized34' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_BASE' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:63629]
+WARNING: [Synth 8-7071] port 'CLKFBOUTB' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [/home/savo/Documents/TEST_IO/T3.2_TESTIO/XEM7310-A75/okLibrary.v:53]
+WARNING: [Synth 8-7071] port 'CLKOUT0B' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [/home/savo/Documents/TEST_IO/T3.2_TESTIO/XEM7310-A75/okLibrary.v:53]
+WARNING: [Synth 8-7071] port 'CLKOUT1' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [/home/savo/Documents/TEST_IO/T3.2_TESTIO/XEM7310-A75/okLibrary.v:53]
+WARNING: [Synth 8-7071] port 'CLKOUT1B' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [/home/savo/Documents/TEST_IO/T3.2_TESTIO/XEM7310-A75/okLibrary.v:53]
+WARNING: [Synth 8-7071] port 'CLKOUT2' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [/home/savo/Documents/TEST_IO/T3.2_TESTIO/XEM7310-A75/okLibrary.v:53]
+WARNING: [Synth 8-7071] port 'CLKOUT2B' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [/home/savo/Documents/TEST_IO/T3.2_TESTIO/XEM7310-A75/okLibrary.v:53]
+WARNING: [Synth 8-7071] port 'CLKOUT3' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [/home/savo/Documents/TEST_IO/T3.2_TESTIO/XEM7310-A75/okLibrary.v:53]
+WARNING: [Synth 8-7071] port 'CLKOUT3B' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [/home/savo/Documents/TEST_IO/T3.2_TESTIO/XEM7310-A75/okLibrary.v:53]
+WARNING: [Synth 8-7071] port 'CLKOUT4' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [/home/savo/Documents/TEST_IO/T3.2_TESTIO/XEM7310-A75/okLibrary.v:53]
+WARNING: [Synth 8-7071] port 'CLKOUT5' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [/home/savo/Documents/TEST_IO/T3.2_TESTIO/XEM7310-A75/okLibrary.v:53]
+WARNING: [Synth 8-7071] port 'CLKOUT6' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [/home/savo/Documents/TEST_IO/T3.2_TESTIO/XEM7310-A75/okLibrary.v:53]
+WARNING: [Synth 8-7071] port 'PWRDWN' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [/home/savo/Documents/TEST_IO/T3.2_TESTIO/XEM7310-A75/okLibrary.v:53]
+WARNING: [Synth 8-7023] instance 'mmcm0' of module 'MMCME2_BASE' has 18 connections declared, but only 6 given [/home/savo/Documents/TEST_IO/T3.2_TESTIO/XEM7310-A75/okLibrary.v:53]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6157] synthesizing module 'GND' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:28815]
+INFO: [Synth 8-6155] done synthesizing module 'GND' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:28815]
+INFO: [Synth 8-6157] synthesizing module 'VCC' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:109689]
+INFO: [Synth 8-6155] done synthesizing module 'VCC' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:109689]
+INFO: [Synth 8-6157] synthesizing module 'LUT5' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62808]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62808]
+INFO: [Synth 8-6157] synthesizing module 'LUT6' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized0' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized0' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6157] synthesizing module 'LUT3' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62720]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62720]
+INFO: [Synth 8-6157] synthesizing module 'LUT2' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62682]
+INFO: [Synth 8-6155] done synthesizing module 'LUT2' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62682]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized1' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized1' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized0' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62808]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized0' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62808]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized1' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62808]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized1' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62808]
+INFO: [Synth 8-6157] synthesizing module 'LUT4' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62762]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62762]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized0' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62720]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized0' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62720]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized2' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized2' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized3' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized3' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62648]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62648]
+INFO: [Synth 8-6157] synthesizing module 'FDSE' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:27972]
+INFO: [Synth 8-6155] done synthesizing module 'FDSE' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:27972]
+INFO: [Synth 8-6157] synthesizing module 'CARRY4' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1486]
+INFO: [Synth 8-6155] done synthesizing module 'CARRY4' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1486]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized2' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62808]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized2' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62808]
+INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized0' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62682]
+INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized0' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62682]
+INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized1' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62682]
+INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized1' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62682]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized1' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62720]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized1' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62720]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized0' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62762]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized0' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62762]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized3' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62808]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized3' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62808]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized4' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized4' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6157] synthesizing module 'LUT1__parameterized0' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62648]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1__parameterized0' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62648]
+INFO: [Synth 8-6157] synthesizing module 'FDPE' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:27776]
+INFO: [Synth 8-6155] done synthesizing module 'FDPE' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:27776]
+INFO: [Synth 8-6157] synthesizing module 'FDCE' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:27620]
+INFO: [Synth 8-6155] done synthesizing module 'FDCE' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:27620]
+INFO: [Synth 8-6157] synthesizing module 'RAMB18E1' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:102852]
+INFO: [Synth 8-6155] done synthesizing module 'RAMB18E1' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:102852]
+INFO: [Synth 8-6157] synthesizing module 'FDRE__parameterized0' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:27836]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE__parameterized0' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:27836]
+INFO: [Synth 8-6157] synthesizing module 'FDPE__parameterized0' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:27776]
+INFO: [Synth 8-6155] done synthesizing module 'FDPE__parameterized0' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:27776]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized4' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62808]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized4' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62808]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized5' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized5' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized6' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized6' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized1' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62762]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized1' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62762]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized2' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62762]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized2' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62762]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized7' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized7' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized8' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized8' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized9' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized9' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized10' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized10' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized11' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized11' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized5' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62808]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized5' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62808]
+INFO: [Synth 8-6157] synthesizing module 'DNA_PORT' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:26095]
+INFO: [Synth 8-6155] done synthesizing module 'DNA_PORT' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:26095]
+INFO: [Synth 8-6157] synthesizing module 'FDCE__parameterized0' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:27620]
+INFO: [Synth 8-6155] done synthesizing module 'FDCE__parameterized0' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:27620]
+INFO: [Synth 8-6157] synthesizing module 'FDPE__parameterized1' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:27776]
+INFO: [Synth 8-6155] done synthesizing module 'FDPE__parameterized1' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:27776]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized12' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized12' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized0' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized0' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized13' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized13' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized14' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized14' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized1' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized1' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized2' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized2' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized3' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized3' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized15' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized15' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized4' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized4' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized16' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized16' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized5' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized5' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized17' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized17' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6157] synthesizing module 'RAM128X1S' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:97818]
+INFO: [Synth 8-6155] done synthesizing module 'RAM128X1S' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:97818]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized6' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized6' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized18' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized18' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized7' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized7' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6157] synthesizing module 'RAM32M' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:98065]
+INFO: [Synth 8-6155] done synthesizing module 'RAM32M' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:98065]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized8' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized8' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized9' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized9' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized10' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized10' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized11' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized11' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized19' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized19' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized20' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized20' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized12' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized12' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized13' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized13' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized21' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized21' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized14' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized14' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized15' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized15' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized16' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized16' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized22' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized22' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized17' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized17' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized18' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized18' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized19' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized19' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized20' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized20' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized23' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized23' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized24' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized24' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized21' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized21' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62904]
+INFO: [Synth 8-6157] synthesizing module 'RAMB18E1__parameterized0' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:102852]
+INFO: [Synth 8-6155] done synthesizing module 'RAMB18E1__parameterized0' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:102852]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized25' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized25' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized26' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized26' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized27' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized27' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized28' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized28' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized29' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized29' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized30' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized30' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized31' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized31' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized32' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized32' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized33' [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
 INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized34' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized35' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
-INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized36' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized33' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized34' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized35' (0#1) [/etc/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62858]
 INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-7071] port 'dna' of module 'okHost' is unconnected for instance 'okHI' [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:239]
-WARNING: [Synth 8-7071] port 'dna_valid' of module 'okHost' is unconnected for instance 'okHI' [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:239]
-WARNING: [Synth 8-7023] instance 'okHI' of module 'okHost' has 9 connections declared, but only 7 given [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:239]
+WARNING: [Synth 8-7071] port 'dna' of module 'okHost' is unconnected for instance 'okHI' [/home/savo/Documents/TEST_IO/T3.2_TESTIO/Reveal_Top.v:265]
+WARNING: [Synth 8-7071] port 'dna_valid' of module 'okHost' is unconnected for instance 'okHI' [/home/savo/Documents/TEST_IO/T3.2_TESTIO/Reveal_Top.v:265]
+WARNING: [Synth 8-7023] instance 'okHI' of module 'okHost' has 9 connections declared, but only 7 given [/home/savo/Documents/TEST_IO/T3.2_TESTIO/Reveal_Top.v:265]
 	Parameter N bound to: 1 - type: integer 
-WARNING: [Synth 8-3848] Net ddr3_addr in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:39]
-WARNING: [Synth 8-3848] Net ddr3_ba in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:40]
-WARNING: [Synth 8-3848] Net ddr3_ck_p in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:41]
-WARNING: [Synth 8-3848] Net ddr3_ck_n in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:42]
-WARNING: [Synth 8-3848] Net ddr3_cke in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:43]
-WARNING: [Synth 8-3848] Net ddr3_cas_n in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:44]
-WARNING: [Synth 8-3848] Net ddr3_ras_n in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:45]
-WARNING: [Synth 8-3848] Net ddr3_we_n in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:46]
-WARNING: [Synth 8-3848] Net ddr3_odt in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:47]
-WARNING: [Synth 8-3848] Net ddr3_dm in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:48]
-WARNING: [Synth 8-3848] Net ddr3_reset_n in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:51]
-WARNING: [Synth 8-3848] Net CS_POT2 in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:54]
-WARNING: [Synth 8-3848] Net CS_POT1 in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:55]
-WARNING: [Synth 8-3848] Net ADC_SYNC1 in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:57]
-WARNING: [Synth 8-3848] Net ADC_SYNC2 in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:58]
-WARNING: [Synth 8-3848] Net CS_PLL in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:59]
-WARNING: [Synth 8-3848] Net SPI_DI in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:60]
-WARNING: [Synth 8-3848] Net SPICLK in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:62]
-WARNING: [Synth 8-3848] Net DIN_T3 in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:65]
-WARNING: [Synth 8-3848] Net SPICLK_T3 in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:66]
-WARNING: [Synth 8-3848] Net CS_T3 in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:67]
-WARNING: [Synth 8-3848] Net LE in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:70]
-WARNING: [Synth 8-3848] Net sck in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:71]
-WARNING: [Synth 8-3848] Net mosi in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:72]
-WARNING: [Synth 8-3848] Net ss in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:73]
-WARNING: [Synth 8-3848] Net SRI_laser in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:76]
-WARNING: [Synth 8-3848] Net DAC_CLK_laser in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:77]
-WARNING: [Synth 8-3848] Net DAC_LD_n_laser in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:78]
-WARNING: [Synth 8-3848] Net SRI_cam in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:79]
-WARNING: [Synth 8-3848] Net DAC_CLK_cam in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:80]
-WARNING: [Synth 8-3848] Net DAC_LD_n_cam in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:81]
-WARNING: [Synth 8-3848] Net RST_N in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:83]
-WARNING: [Synth 8-3848] Net RS_POT in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:84]
-WARNING: [Synth 8-3848] Net EN_STREAM in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:86]
-WARNING: [Synth 8-3848] Net ADCCLK_IN in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:89]
-WARNING: [Synth 8-3848] Net CLKM in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:90]
-WARNING: [Synth 8-3848] Net TX_CLK_IN in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:91]
-WARNING: [Synth 8-3848] Net PIXGLOB_RES in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:94]
-WARNING: [Synth 8-3848] Net ROWADD in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:96]
-WARNING: [Synth 8-3848] Net PIXLEFTBUCK_SEL in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:97]
-WARNING: [Synth 8-3848] Net PIXRES in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:98]
-WARNING: [Synth 8-3848] Net COLLOAD_EN in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:99]
-WARNING: [Synth 8-3848] Net COL_PRECH in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:100]
-WARNING: [Synth 8-3848] Net ADC_EN in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:101]
-WARNING: [Synth 8-3848] Net DATA_LOAD in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:102]
-WARNING: [Synth 8-3848] Net RST_ADC in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:103]
-WARNING: [Synth 8-3848] Net RST_OUTMUX in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:104]
-WARNING: [Synth 8-3848] Net MODDEF in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:106]
-WARNING: [Synth 8-3848] Net PIXDRAIN in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:109]
-WARNING: [Synth 8-3848] Net EXP in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:110]
-WARNING: [Synth 8-3848] Net PIXTG in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:111]
-WARNING: [Synth 8-3848] Net DES2 in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:112]
-WARNING: [Synth 8-3848] Net mSTREAM in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:115]
-WARNING: [Synth 8-3848] Net FPGA_MOD0 in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:117]
-WARNING: [Synth 8-3848] Net FPGA_MOD90 in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:118]
-WARNING: [Synth 8-3848] Net okEHx in module/entity Reveal_Top does not have driver. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:237]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/savo/Documents/TEST_IO/T3.2_TESTIO/spi_master_adc.v:75]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/savo/Documents/TEST_IO/T3.2_TESTIO/spi_master_adc.v:126]
+WARNING: [Synth 8-7071] port 'wr_rst_busy' of module 'fifo_w32_16_r32_16_ib' is unconnected for instance 'i_cmd' [/home/savo/Documents/TEST_IO/T3.2_TESTIO/spi_master_adc.v:196]
+WARNING: [Synth 8-7071] port 'rd_rst_busy' of module 'fifo_w32_16_r32_16_ib' is unconnected for instance 'i_cmd' [/home/savo/Documents/TEST_IO/T3.2_TESTIO/spi_master_adc.v:196]
+WARNING: [Synth 8-7023] instance 'i_cmd' of module 'fifo_w32_16_r32_16_ib' has 12 connections declared, but only 10 given [/home/savo/Documents/TEST_IO/T3.2_TESTIO/spi_master_adc.v:196]
+	Parameter DIVISION bound to: 16'b0000000001010101 
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter REG_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/savo/Documents/TEST_IO/T3.2_TESTIO/i2c_master.v:125]
+WARNING: [Synth 8-7071] port 'o_data' of module 'i2c_master' is unconnected for instance 'i2c_master_inst' [/home/savo/Documents/TEST_IO/T3.2_TESTIO/i2c_operator.v:130]
+WARNING: [Synth 8-7023] instance 'i2c_master_inst' of module 'i2c_master' has 12 connections declared, but only 11 given [/home/savo/Documents/TEST_IO/T3.2_TESTIO/i2c_operator.v:130]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/savo/Documents/TEST_IO/T3.2_TESTIO/i2c_operator.v:155]
+WARNING: [Synth 8-3848] Net okEHx in module/entity Reveal_Top does not have driver. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/Reveal_Top.v:263]
+WARNING: [Synth 8-7129] Port MISO in module spi_master_I2Cinterface is either unconnected or has no load
 WARNING: [Synth 8-7129] Port okHE[112] in module okWireIn is either unconnected or has no load
 WARNING: [Synth 8-7129] Port okHE[111] in module okWireIn is either unconnected or has no load
 WARNING: [Synth 8-7129] Port okHE[110] in module okWireIn is either unconnected or has no load
@@ -410,21 +371,20 @@ WARNING: [Synth 8-7129] Port prog_full_thresh[4] in module fifo_generator_v13_2_
 WARNING: [Synth 8-7129] Port prog_full_thresh[3] in module fifo_generator_v13_2_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port prog_full_thresh[2] in module fifo_generator_v13_2_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port prog_full_thresh[1] in module fifo_generator_v13_2_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port prog_full_thresh[0] in module fifo_generator_v13_2_0 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1287.324 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2801.340 ; gain = 190.562 ; free physical = 1229 ; free virtual = 29966
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1287.324 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2816.184 ; gain = 205.406 ; free physical = 1229 ; free virtual = 29966
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1287.324 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2816.184 ; gain = 205.406 ; free physical = 1229 ; free virtual = 29966
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1287.324 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2822.121 ; gain = 0.000 ; free physical = 1225 ; free virtual = 29963
 INFO: [Netlist 29-17] Analyzing 146 Unisim elements for replacement
 WARNING: [Netlist 29-432] The IBUFG primitive 'okHI/hi_clk_bufg' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -432,125 +392,135 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc]
-WARNING: [Constraints 18-6211] Setting input delay on a clock pin 'okUH[0]' relative to clock 'okUH0' defined on the same pin is not supported, ignoring it [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:72]
-WARNING: [Constraints 18-6211] Setting input delay on a clock pin 'okUH[0]' relative to clock 'okUH0' defined on the same pin is not supported, ignoring it [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:73]
-WARNING: [Vivado 12-584] No ports matched 'TX_CLK'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:220]
-WARNING: [Vivado 12-584] No ports matched 'TX_CLK'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:221]
-WARNING: [Vivado 12-584] No ports matched 'ADCCLK_IN_12'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:232]
-WARNING: [Vivado 12-584] No ports matched 'ADCCLK_IN_12'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:233]
-WARNING: [Vivado 12-584] No ports matched 'SPI_DATA'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:238]
-WARNING: [Vivado 12-584] No ports matched 'SPI_DATA'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:239]
-WARNING: [Vivado 12-584] No ports matched 'SPI_CLK'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:241]
-WARNING: [Vivado 12-584] No ports matched 'SPI_CLK'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:242]
-WARNING: [Vivado 12-584] No ports matched 'SPI_UPLOAD'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:244]
-WARNING: [Vivado 12-584] No ports matched 'SPI_UPLOAD'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:245]
-WARNING: [Vivado 12-584] No ports matched 'MOD0'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:247]
-WARNING: [Vivado 12-584] No ports matched 'MOD0'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:248]
-WARNING: [Vivado 12-584] No ports matched 'MSTREAM[2]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:250]
-WARNING: [Vivado 12-584] No ports matched 'MSTREAM[2]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:251]
-WARNING: [Vivado 12-584] No ports matched 'MSTREAM[5]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:256]
-WARNING: [Vivado 12-584] No ports matched 'MSTREAM[5]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:257]
-WARNING: [Vivado 12-584] No ports matched 'MSTREAM[1]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:259]
-WARNING: [Vivado 12-584] No ports matched 'MSTREAM[1]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:260]
-WARNING: [Vivado 12-584] No ports matched 'DES2ND'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:262]
-WARNING: [Vivado 12-584] No ports matched 'DES2ND'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:263]
-WARNING: [Vivado 12-584] No ports matched 'MOD90'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:265]
-WARNING: [Vivado 12-584] No ports matched 'MOD90'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:266]
-WARNING: [Vivado 12-584] No ports matched 'MSTREAM[4]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:271]
-WARNING: [Vivado 12-584] No ports matched 'MSTREAM[4]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:272]
-WARNING: [Vivado 12-584] No ports matched 'MSTREAM[3]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:274]
-WARNING: [Vivado 12-584] No ports matched 'MSTREAM[3]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:275]
-WARNING: [Vivado 12-584] No ports matched 'DIGMUX_OUT[3]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:277]
-WARNING: [Vivado 12-584] No ports matched 'DIGMUX_OUT[3]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:278]
-WARNING: [Vivado 12-584] No ports matched 'DIGMUX_OUT[2]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:280]
-WARNING: [Vivado 12-584] No ports matched 'DIGMUX_OUT[2]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:281]
-WARNING: [Vivado 12-584] No ports matched 'DIGMUX_OUT[1]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:283]
-WARNING: [Vivado 12-584] No ports matched 'DIGMUX_OUT[1]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:284]
-WARNING: [Vivado 12-584] No ports matched 'DIGMUX_OUT[0]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:286]
-WARNING: [Vivado 12-584] No ports matched 'DIGMUX_OUT[0]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:287]
-WARNING: [Vivado 12-584] No ports matched 'LH_02'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:289]
-WARNING: [Vivado 12-584] No ports matched 'LH_02'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:290]
-WARNING: [Vivado 12-584] No ports matched 'LH_04'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:292]
-WARNING: [Vivado 12-584] No ports matched 'LH_04'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:293]
-WARNING: [Vivado 12-584] No ports matched 'LH_06'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:295]
-WARNING: [Vivado 12-584] No ports matched 'LH_06'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:296]
-WARNING: [Vivado 12-584] No ports matched 'LH_09'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:298]
-WARNING: [Vivado 12-584] No ports matched 'LH_09'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:299]
-WARNING: [Vivado 12-584] No ports matched 'LH_11'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:301]
-WARNING: [Vivado 12-584] No ports matched 'LH_11'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:302]
-WARNING: [Vivado 12-584] No ports matched 'TEST_IO[6]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:304]
-WARNING: [Vivado 12-584] No ports matched 'TEST_IO[6]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:305]
-WARNING: [Vivado 12-584] No ports matched 'TEST_IO[5]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:307]
-WARNING: [Vivado 12-584] No ports matched 'TEST_IO[5]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:308]
-WARNING: [Vivado 12-584] No ports matched 'TEST_IO[4]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:310]
-WARNING: [Vivado 12-584] No ports matched 'TEST_IO[4]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:311]
-WARNING: [Vivado 12-584] No ports matched '3TXOUT_P[1]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:313]
-WARNING: [Vivado 12-584] No ports matched '3TXOUT_P[1]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:314]
-WARNING: [Vivado 12-584] No ports matched '3TXOUT_N[1]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:316]
-WARNING: [Vivado 12-584] No ports matched '3TXOUT_N[1]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:317]
-WARNING: [Vivado 12-584] No ports matched '3TXOUT_P[0]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:319]
-WARNING: [Vivado 12-584] No ports matched '3TXOUT_P[0]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:320]
-WARNING: [Vivado 12-584] No ports matched '3TXOUT_N[0]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:322]
-WARNING: [Vivado 12-584] No ports matched '3TXOUT_N[0]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:323]
-WARNING: [Vivado 12-584] No ports matched 'TEST_IO[3]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:325]
-WARNING: [Vivado 12-584] No ports matched 'TEST_IO[3]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:326]
-WARNING: [Vivado 12-584] No ports matched 'TEST_IO[2]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:328]
-WARNING: [Vivado 12-584] No ports matched 'TEST_IO[2]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:329]
-WARNING: [Vivado 12-584] No ports matched 'TEST_IO[1]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:331]
-WARNING: [Vivado 12-584] No ports matched 'TEST_IO[1]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:332]
-WARNING: [Vivado 12-584] No ports matched 'TEST_IO[0]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:334]
-WARNING: [Vivado 12-584] No ports matched 'TEST_IO[0]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:335]
-WARNING: [Vivado 12-584] No ports matched 'LH_08'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:337]
-WARNING: [Vivado 12-584] No ports matched 'LH_08'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:338]
-WARNING: [Vivado 12-584] No ports matched '3TXCLK_P'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:340]
-WARNING: [Vivado 12-584] No ports matched '3TXCLK_P'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:341]
-WARNING: [Vivado 12-584] No ports matched '3TXCLK_N'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:343]
-WARNING: [Vivado 12-584] No ports matched '3TXCLK_N'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:344]
-WARNING: [Vivado 12-584] No ports matched '3TXOUT_P[2]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:346]
-WARNING: [Vivado 12-584] No ports matched '3TXOUT_P[2]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:347]
-WARNING: [Vivado 12-584] No ports matched '3TXOUT_N[2]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:349]
-WARNING: [Vivado 12-584] No ports matched '3TXOUT_N[2]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:350]
-WARNING: [Vivado 12-584] No ports matched '1TXOUT_N[0]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:352]
-WARNING: [Vivado 12-584] No ports matched '1TXOUT_N[0]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:353]
-WARNING: [Vivado 12-584] No ports matched '1TXOUT_P[0]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:355]
-WARNING: [Vivado 12-584] No ports matched '1TXOUT_P[0]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:356]
-WARNING: [Vivado 12-584] No ports matched '1TXOUT_N[1]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:358]
-WARNING: [Vivado 12-584] No ports matched '1TXOUT_N[1]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:359]
-WARNING: [Vivado 12-584] No ports matched '1TXOUT_P[1]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:361]
-WARNING: [Vivado 12-584] No ports matched '1TXOUT_P[1]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:362]
-WARNING: [Vivado 12-584] No ports matched '1TXOUT_N[2]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:364]
-WARNING: [Vivado 12-584] No ports matched '1TXOUT_N[2]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:365]
-WARNING: [Vivado 12-584] No ports matched '1TXOUT_P[2]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:367]
-WARNING: [Vivado 12-584] No ports matched '1TXOUT_P[2]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:368]
-WARNING: [Vivado 12-584] No ports matched '1TXCLK_N'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:370]
-WARNING: [Vivado 12-584] No ports matched '1TXCLK_N'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:371]
-WARNING: [Vivado 12-584] No ports matched '1TXCLK_P'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:373]
-WARNING: [Vivado 12-584] No ports matched '1TXCLK_P'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:374]
-WARNING: [Vivado 12-584] No ports matched '2TXOUT_N[0]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:376]
-WARNING: [Vivado 12-584] No ports matched '2TXOUT_N[0]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:377]
-WARNING: [Vivado 12-584] No ports matched '2TXOUT_P[0]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:379]
-WARNING: [Vivado 12-584] No ports matched '2TXOUT_P[0]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:380]
-WARNING: [Vivado 12-584] No ports matched '2TXOUT_N[1]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:382]
-WARNING: [Vivado 12-584] No ports matched '2TXOUT_N[1]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:383]
-WARNING: [Vivado 12-584] No ports matched '2TXOUT_P[1]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:385]
-WARNING: [Vivado 12-584] No ports matched '2TXOUT_P[1]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:386]
-INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:386]
-INFO: [Timing 38-2] Deriving generated clocks [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:580]
-WARNING: [Vivado 12-627] No clocks matched 'sys_clk_p'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:580]
-WARNING: [Vivado 12-627] No clocks matched 'clk_pll_i'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:580]
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:580]
-CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks {sys_clk_p clk_pll_i}]'. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:580]
-Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc:580]
-Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-Finished Parsing XDC File [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Reveal_Top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3_2_constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Reveal_Top_propImpl.xdc].
+Parsing XDC File [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.gen/sources_1/ip/fifo_w32_16_r32_16_ib/fifo_w32_16_r32_16_ib/fifo_w32_16_r16_32_ib_in_context.xdc] for cell 'SPItest/i_cmd'
+Finished Parsing XDC File [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.gen/sources_1/ip/fifo_w32_16_r32_16_ib/fifo_w32_16_r32_16_ib/fifo_w32_16_r16_32_ib_in_context.xdc] for cell 'SPItest/i_cmd'
+Parsing XDC File [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clock_base'
+Finished Parsing XDC File [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clock_base'
+Parsing XDC File [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc]
+WARNING: [Constraints 18-6211] Setting input delay on a clock pin 'okUH[0]' relative to clock 'okUH0' defined on the same pin is not supported, ignoring it [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:72]
+WARNING: [Constraints 18-6211] Setting input delay on a clock pin 'okUH[0]' relative to clock 'okUH0' defined on the same pin is not supported, ignoring it [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[0]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:110]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[1]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:111]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[2]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:112]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[3]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:113]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[4]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:114]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[5]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:115]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[6]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:116]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[7]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:117]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[8]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:118]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[9]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:119]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[10]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:120]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[11]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:121]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[12]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:122]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[13]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:123]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[14]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:124]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[15]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:125]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[16]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:126]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[17]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:127]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[18]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:128]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[19]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:129]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[20]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:130]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[21]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:131]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[22]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:132]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[23]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:133]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[24]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:134]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[25]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:135]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[26]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:136]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[27]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:137]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[28]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:138]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[29]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:139]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[30]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:140]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[31]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:141]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[*]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:142]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[*]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:143]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[0]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:145]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[1]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:146]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[2]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:147]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[3]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:148]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[4]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:149]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[5]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:150]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[6]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:151]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[7]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:152]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[8]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:153]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[9]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:154]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[10]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:155]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[11]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:156]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[12]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:157]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[13]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:158]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[14]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:159]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[*]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:160]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[*]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:161]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[0]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:163]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[1]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:164]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[2]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:165]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[*]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:166]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[*]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:167]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ras_n'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:169]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ras_n'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:170]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ras_n'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:171]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_cas_n'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:173]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_cas_n'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:174]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_cas_n'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:175]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_we_n'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:177]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_we_n'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:178]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_we_n'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:179]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_reset_n'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:181]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_reset_n'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:182]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_reset_n'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:183]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_cke[0]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:185]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_cke[*]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:186]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_cke[*]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:187]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_odt[0]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:189]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_odt[*]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:190]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_odt[*]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:191]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[0]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:193]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[1]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:194]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[2]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:195]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[3]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:196]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[*]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:197]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[*]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:198]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dqs_p[0]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:200]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dqs_n[0]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:201]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dqs_p[1]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:202]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dqs_n[1]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:203]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dqs_p[2]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:204]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dqs_n[2]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:205]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dqs_p[3]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:206]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dqs_n[3]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:207]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dqs*'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:208]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dqs*'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:209]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ck_p[0]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:211]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ck_n[0]'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:212]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ck*'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:213]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ck_*'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:214]
+WARNING: [Vivado 12-584] No ports matched 'TX_CLK_IN'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:220]
+WARNING: [Vivado 12-584] No ports matched 'TX_CLK_IN'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:221]
+WARNING: [Vivado 12-584] No ports matched 'RST_OUTMUX'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:224]
+WARNING: [Vivado 12-584] No ports matched 'RST_OUTMUX'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:225]
+WARNING: [Vivado 12-584] No ports matched 'DATA_LOAD'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:227]
+WARNING: [Vivado 12-584] No ports matched 'DATA_LOAD'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:228]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:228]
+INFO: [Timing 38-2] Deriving generated clocks [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:581]
+WARNING: [Vivado 12-627] No clocks matched 'clk_pll_i'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc:581]
+Finished Parsing XDC File [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Reveal_Top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Reveal_Top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Reveal_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint_current.xdc]
+WARNING: [Constraints 18-619] A clock with name 'okUH0' already exists, overwriting the previous clock with the same name. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint_current.xdc:70]
+WARNING: [Constraints 18-6211] Setting input delay on a clock pin 'okUH[0]' relative to clock 'okUH0' defined on the same pin is not supported, ignoring it [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint_current.xdc:72]
+WARNING: [Constraints 18-6211] Setting input delay on a clock pin 'okUH[0]' relative to clock 'okUH0' defined on the same pin is not supported, ignoring it [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint_current.xdc:73]
+WARNING: [Vivado 12-627] No clocks matched 'clk_pll_i'. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint_current.xdc:580]
+Finished Parsing XDC File [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint_current.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint_current.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Reveal_Top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3_2_constraint_current.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Reveal_Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Reveal_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-1714] 1 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1356.688 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2974.934 ; gain = 0.000 ; free physical = 1147 ; free virtual = 29885
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 97 instances were transformed.
   IBUFG => IBUF: 1 instance 
@@ -560,28 +530,49 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM128X1S => RAM128X1S (MUXF7, RAMS64E(x2)): 8 instances
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1356.688 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2974.934 ; gain = 0.000 ; free physical = 1147 ; free virtual = 29885
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1356.688 ; gain = 69.363
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2974.934 ; gain = 364.156 ; free physical = 1226 ; free virtual = 29964
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a75tfgg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1356.688 ; gain = 69.363
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2974.934 ; gain = 364.156 ; free physical = 1226 ; free virtual = 29964
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk_n. (constraint file  /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk_n. (constraint file  /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk_p. (constraint file  /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk_p. (constraint file  /home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 6).
+Applied set_property KEEP_HIERARCHY = SOFT for SPItest/i_cmd. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for clock_base. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for okHI/core0/core0/\a0/cb0 /U0/\inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1356.688 ; gain = 69.363
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2974.934 ; gain = 364.156 ; free physical = 1226 ; free virtual = 29964
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-327] inferring latch for variable 'TestIO_reg_reg' [C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/Reveal_Top.v:160]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'spi_master_I2Cinterface'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_idle |                        000000001 |                             0000
+                S_busy_1 |                        000000010 |                             0001
+             S_load_Data |                        000000100 |                             0010
+               S_load_SS |                        000001000 |                             0011
+                S_busy_2 |                        000010000 |                             0100
+                 S_setup |                        000100000 |                             0101
+              S_trasnfer |                        001000000 |                             0110
+                S_busy_3 |                        010000000 |                             0111
+                   S_end |                        100000000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'spi_master_I2Cinterface'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1356.688 ; gain = 69.363
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2974.934 ; gain = 364.156 ; free physical = 1217 ; free virtual = 29956
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -602,6 +593,7 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'SPItest/SPI_SS_reg' and it is trimmed from '16' to '12' bits. [/home/savo/Documents/TEST_IO/T3.2_TESTIO/spi_master_adc.v:192]
 WARNING: [Synth 8-3332] Sequential element (l008c72ad3b3ec61be52cde84a395c4fa_reg) is unused and will be removed from module okCore.
 WARNING: [Synth 8-3332] Sequential element (l317e0a6720f17cacca076a392154f6ab_reg) is unused and will be removed from module okCore.
 WARNING: [Synth 8-3332] Sequential element (la85eaf42c58af45585f858cdefb86492_reg) is unused and will be removed from module okCore.
@@ -672,25 +664,28 @@ WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_re
 WARNING: [Synth 8-3332] Sequential element (lf38b0951701b1c1d5bc7a746e996b3c6_reg) is unused and will be removed from module okCore.
 WARNING: [Synth 8-3332] Sequential element (okHI/regctrlout1) is unused and will be removed from module Reveal_Top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1356.688 ; gain = 69.363
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2974.934 ; gain = 364.156 ; free physical = 1200 ; free virtual = 29945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'okUH0'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'okHI/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/src_arst' to pin 'okHI/core0/core0/a0/l62a5479e7989ce7f4d5507c695cc69cf_reg/Q'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1356.688 ; gain = 69.363
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2974.934 ; gain = 364.156 ; free physical = 1080 ; free virtual = 29830
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1356.688 ; gain = 69.363
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2974.934 ; gain = 364.156 ; free physical = 1079 ; free virtual = 29829
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1356.688 ; gain = 69.363
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2974.934 ; gain = 364.156 ; free physical = 1075 ; free virtual = 29825
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -708,107 +703,110 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 1356.688 ; gain = 69.363
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2974.934 ; gain = 364.156 ; free physical = 1079 ; free virtual = 29823
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 1356.688 ; gain = 69.363
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2974.934 ; gain = 364.156 ; free physical = 1079 ; free virtual = 29823
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 1356.688 ; gain = 69.363
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2974.934 ; gain = 364.156 ; free physical = 1079 ; free virtual = 29823
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 1356.688 ; gain = 69.363
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2974.934 ; gain = 364.156 ; free physical = 1079 ; free virtual = 29823
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 1356.688 ; gain = 69.363
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2974.934 ; gain = 364.156 ; free physical = 1079 ; free virtual = 29824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 1356.688 ; gain = 69.363
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2974.934 ; gain = 364.156 ; free physical = 1079 ; free virtual = 29823
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
 ---------------------------------------------------------------------------------
 
 Report BlackBoxes: 
-+-+--------------+----------+
-| |BlackBox name |Instances |
-+-+--------------+----------+
-+-+--------------+----------+
++------+----------------------+----------+
+|      |BlackBox name         |Instances |
++------+----------------------+----------+
+|1     |clk_wiz_0             |         1|
+|2     |fifo_w32_16_r32_16_ib |         1|
++------+----------------------+----------+
 
 Report Cell Usage: 
-+------+------------+------+
-|      |Cell        |Count |
-+------+------------+------+
-|1     |BUFG        |     2|
-|2     |CARRY4      |    46|
-|3     |DNA_PORT    |     1|
-|4     |LUT1        |    66|
-|5     |LUT2        |    54|
-|6     |LUT3        |    64|
-|7     |LUT4        |   145|
-|8     |LUT5        |   103|
-|9     |LUT6        |   450|
-|11    |MMCME2_BASE |     1|
-|12    |RAM128X1S   |     8|
-|13    |RAM32M      |     4|
-|14    |RAMB18E1    |     2|
-|16    |RAMB36E1    |     1|
-|17    |FDCE        |   159|
-|18    |FDPE        |    37|
-|19    |FDRE        |   627|
-|20    |FDSE        |    22|
-|21    |LD          |     7|
-|22    |IBUF        |    17|
-|23    |IBUFG       |     1|
-|24    |IOBUF       |    33|
-|25    |OBUF        |    50|
-|26    |OBUFT       |    58|
-+------+------------+------+
++------+----------------------+------+
+|      |Cell                  |Count |
++------+----------------------+------+
+|1     |clk_wiz               |     1|
+|2     |fifo_w32_16_r32_16_ib |     1|
+|3     |BUFG                  |     2|
+|4     |CARRY4                |    57|
+|5     |DNA_PORT              |     1|
+|6     |LUT1                  |    71|
+|7     |LUT2                  |    75|
+|8     |LUT3                  |    94|
+|9     |LUT4                  |   200|
+|10    |LUT5                  |   130|
+|11    |LUT6                  |   515|
+|13    |MMCME2_BASE           |     1|
+|14    |MUXF7                 |     3|
+|15    |RAM128X1S             |     8|
+|16    |RAM32M                |     4|
+|17    |RAMB18E1              |     2|
+|19    |RAMB36E1              |     1|
+|20    |FDCE                  |   159|
+|21    |FDPE                  |    37|
+|22    |FDRE                  |   831|
+|23    |FDSE                  |    22|
+|24    |IBUF                  |     5|
+|25    |IBUFG                 |     1|
+|26    |IOBUF                 |    35|
+|27    |OBUF                  |    12|
+|28    |OBUFT                 |     8|
++------+----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 1356.688 ; gain = 69.363
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2974.934 ; gain = 364.156 ; free physical = 1079 ; free virtual = 29824
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 685 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:48 . Memory (MB): peak = 1356.688 ; gain = 0.000
-Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 1356.688 ; gain = 69.363
+Synthesis finished with 0 errors, 0 critical warnings and 592 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2974.934 ; gain = 205.406 ; free physical = 1136 ; free virtual = 29881
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2974.934 ; gain = 364.156 ; free physical = 1136 ; free virtual = 29881
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 1356.688 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 153 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2974.934 ; gain = 0.000 ; free physical = 1232 ; free virtual = 29976
+INFO: [Netlist 29-17] Analyzing 162 Unisim elements for replacement
 WARNING: [Netlist 29-432] The IBUFG primitive 'okHI/hi_clk_bufg' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1356.688 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2974.934 ; gain = 0.000 ; free physical = 1168 ; free virtual = 29913
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 104 instances were transformed.
+  A total of 99 instances were transformed.
   IBUFG => IBUF: 1 instance 
-  IOBUF => IOBUF (IBUF, OBUFT): 33 instances
-  LD => LDCE: 7 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 35 instances
   LUT6_2 => LUT6_2 (LUT5, LUT6): 50 instances
   MMCME2_BASE => MMCME2_ADV: 1 instance 
   RAM128X1S => RAM128X1S (MUXF7, RAMS64E(x2)): 8 instances
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
 
-Synth Design complete, checksum: 6451cdc5
+Synth Design complete, checksum: 64f81f42
 INFO: [Common 17-83] Releasing license: Synthesis
-229 Infos, 350 Warnings, 2 Critical Warnings and 0 Errors encountered.
+239 Infos, 306 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:01:01 . Memory (MB): peak = 1356.688 ; gain = 69.363
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:29 . Memory (MB): peak = 2974.934 ; gain = 364.156 ; free physical = 1385 ; free virtual = 30129
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-INFO: [Common 17-1381] The checkpoint 'C:/Users/benlu/Desktop/ISML/T3.2_TESTIO/T3.2_TESTIO.runs/synth_1/Reveal_Top.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/savo/Documents/TEST_IO/T3.2_TESTIO/T3.2_TESTIO.runs/synth_1/Reveal_Top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Reveal_Top_utilization_synth.rpt -pb Reveal_Top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Aug  1 13:35:47 2023...
+INFO: [Common 17-206] Exiting Vivado at Tue Aug  8 18:01:51 2023...

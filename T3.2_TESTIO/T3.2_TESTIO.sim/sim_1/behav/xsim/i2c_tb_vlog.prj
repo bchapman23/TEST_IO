@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../XEM7310-A75/okBTPipeIn.v" \
+"../../../../XEM7310-A75/okBTPipeOut.v" \
+"../../../../XEM7310-A75/okCoreHarness.v" \
+"../../../../XEM7310-A75/okLibrary.v" \
+"../../../../XEM7310-A75/okPipeIn.v" \
+"../../../../XEM7310-A75/okPipeOut.v" \
+"../../../../XEM7310-A75/okRegisterBridge.v" \
+"../../../../XEM7310-A75/okTriggerIn.v" \
+"../../../../XEM7310-A75/okTriggerOut.v" \
+"../../../../XEM7310-A75/okWireIn.v" \
+"../../../../XEM7310-A75/okWireOut.v" \
+"../../../../Reveal_Top.v" \
+"../../../../i2c_master.v" \
+"../../../../i2c_operator.v" \
+"../../../../T3.2_TESTIO.srcs/sources_1/new/i2c_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
